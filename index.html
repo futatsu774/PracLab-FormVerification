@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <script src='js/validation.js'></script>
+    <link rel="stylesheet" type="text/css" href="css/validation.css">
+</head>
+<body>
+    <header>
+        <p>Create a New Event</p>
+    </header>
+    <div>
+    <form class="form" onsubmit="validateForm()">
+        
+
+    <label>Event Type: </label>
+    
+    <select id="events" name="Events" value="Choose one">
+    <option value="Option">Option</option>
+    <option value="Option2">Option2</option>
+    <option value="Option3">Option3</option>
+    <option value="Option4">Option4</option>
+    <option value="Option5">Option5</option>
+    </select><br><br>
+
+    <label> Event Title: </label>
+    <input type="text"  id="id"><br><br>
+
+    <label> Event Dates: </label>
+    <input id="date1" type="date" > to 
+    <input id="date2" type="date" ><br><br>
+
+    <label> Posting Date: </label>
+    <input id="postingdate" type="date" ><br><br>
+
+    <input type="checkbox" id="check1">
+    <label> Is Registration Required?</label><br>
+    <input type="checkbox" id="check2">
+    <label> Is this event associated with any Family Programs?</label><br>
+    <input type="checkbox" id="check3">
+    <label> Upon Registration/Completion, Are Users to Recieve an Auto Generated Email?</label><br>
+    <input type="checkbox" id="check4">
+    <label> Is There a Point of Contact?</label><br>
+    <input type="checkbox" id="check5">
+    <label> Is There a Hosting Command Point of Contact</label><br><br>
+
+    <input type="submit" value="Save" onclick="validateForm()">
+    <input type="reset" value="Cancel"><br><br>
+    </div>  
+</form>
+
+
+</body>
+</html>
